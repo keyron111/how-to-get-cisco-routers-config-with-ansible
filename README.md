@@ -10,5 +10,5 @@
     - name: saving config into a new file on server
       copy:
         content: "{{ config.stdout[0] }}"
-        dest: "./{{ inventory_hostname }}.backup"
+        dest: "/root/NETWORK_INFO/{{ inventory_hostname }}.backup"
       
